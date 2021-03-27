@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import SlidingButton from './SlidingButton.js'
 import Button from './Button.js'
