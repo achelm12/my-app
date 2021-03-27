@@ -1,0 +1,60 @@
+.containerday{
+  position: relative;
+  transition: background-image 0.5s;
+  background-image:url("./daysky.png");
+  width: 26rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+}
+.containernight{
+  position: relative;
+  transition: background-image 0.5s;
+  background-image:url("./nightsky.png");
+  width: 26rem;
+  height: 3rem;
+  border-radius: 10px;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+}
+.nightbutton{
+  transition: right 0.5s, background 0.5s, border 0.5s;
+  position: absolute;
+  right: 1.5%;
+  height: 37%;
+  width: 20%;
+  background: #2f3640;
+  border-radius: 10px;
+  border: 0.7rem solid #2f3640;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nightbutton:hover{
+  cursor:pointer;
+}
+.daybutton{
+  transition: right 0.5s, background 0.5s, border 0.5s;
+  position: absolute;
+  right: 74%;
+  height: 37%;
+  width: 20%;
+  background: #5385c9;
+  border-radius: 10px;
+  border: 0.7rem solid #5385c9;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.daybutton:hover{
+  cursor:pointer;
+}
