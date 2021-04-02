@@ -1,16 +1,16 @@
 import './SlidingButton.css'
 import React, { useEffect, useState } from "react";
 
-function SlidingButton() {
+function SlidingButton({autoControl}) {
   const [isActive, setActive] = useState(false);
   const toggleClass = () => {
     setActive(!isActive);
   };
 
   return (
-    <div className={isActive ? 'containernight':'containerday'}>
-      <div className={isActive ? 'nightbutton':'daybutton'}
-        onClick={toggleClass}>
+    <div className={  autoControl ? 'containerdisable' : (isActive ? 'containernight':'containerday')}>
+      <div className={autoControl ? 'disablebutton'    : (isActive ? 'nightbutton':'daybutton')  }
+           onClick={autoControl ? null:toggleClass}>
           {isActive ? "Open Blinds":"Close Blinds"}
       </div>
     </div>

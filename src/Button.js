@@ -1,15 +1,14 @@
 import './Button.css'
 import React, { useEffect, useState } from "react";
 
-function Button (){
-  const [isActive, setActive] = useState(false);
+function Button ({autoControl, onAutoControl}){
   const toggleClass = () => {
-    setActive(!isActive);
+    onAutoControl(!autoControl);
   };
   return(
-    <div className={isActive ? 'autocontrolon':'autocontroloff'}
+    <div className={autoControl ? 'autocontrolon':'autocontroloff'}
       onClick={toggleClass}>
-        {isActive ? "Disable Autocontrol":"Enable Autocontrol"}
+        {autoControl ? "Disable Autocontrol":"Enable Autocontrol"}
     </div>
   );
 }
