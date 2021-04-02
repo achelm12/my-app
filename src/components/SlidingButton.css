@@ -1,7 +1,7 @@
 .containerday{
   position: relative;
-  transition: background-image 0.5s;
-  background-image:url("./daysky.png");
+  transition: background-image 2s;
+  background-image:url("../resources/daysky.png");
   width: 26rem;
   height: 3rem;
   border-radius: 0.5rem;
@@ -13,8 +13,8 @@
 }
 .containernight{
   position: relative;
-  transition: background-image 0.5s;
-  background-image:url("./nightsky.png");
+  transition: background-image 2s;
+  background-image:url("../resources/nightsky.png");
   width: 26rem;
   height: 3rem;
   border-radius: 10px;
@@ -38,8 +38,9 @@
 }
 
 .nightbutton{
+  text-align: center;
   user-select: none;
-  transition: right 0.5s, background 0.5s, border 0.5s;
+  transition: right 2s, background 2s, border 2s;
   position: absolute;
   right: 1.5%;
   height: 37%;
@@ -59,8 +60,9 @@
   border: 0.7rem solid #272E38;
 }
 .daybutton{
+  text-align: center;
   user-select: none;
-  transition: right 0.5s, background 0.5s, border 0.5s;
+  transition: right 2s, background 2s, border 2s;
   position: absolute;
   right: 73.2%;
   height: 37%;
@@ -82,9 +84,10 @@
 
 .disablebutton{
   user-select: none;
-  transition: right 0.5s, background 0.5s, border 0.5s;
+  text-align: center;
+  transition: right 2s, background 2s, border 2s;
   position: absolute;
-  right: 73.2%;
+  right: 38%;
   height: 37%;
   width: 20%;
   background: #444444;

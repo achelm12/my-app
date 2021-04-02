@@ -1,11 +1,10 @@
 import './App.css';
-import React, { useEffect, useState } from "react";
-import SlidingButton from './SlidingButton.js'
-import Button from './Button.js'
+import React, { useState } from "react";
+import SlidingButton from './components/SlidingButton.js'
+import Button from './components/Button.js'
 
 function App() {
   const [autoControl, setAutoControl] = useState(false);
-  console.log(autoControl)
   return (
     <div className="App">
       <header className="Header">
