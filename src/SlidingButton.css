@@ -37,10 +37,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 1px 1px 1px 1px #FFFFFF11;
+  box-shadow: 1px 1px 3px 1px #88888844;
 }
 .nightbutton:hover{
   cursor:pointer;
+  background: #272E38;
+  border: 0.7rem solid #272E38;
 }
 .daybutton{
   transition: right 0.5s, background 0.5s, border 0.5s;
@@ -55,9 +57,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 2px 2px 2px 2px #00000011;
+  box-shadow: 1px 1px 3px 1px #00000044;
 
 }
 .daybutton:hover{
   cursor:pointer;
+  background: #4B7DC1;
+  border: 0.7rem solid #4B7DC1;
 }
